@@ -1,65 +1,124 @@
-import Image from "next/image";
+import TopContactBar from "./components/TopContactBar";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import BrandCarousel from "./components/BrandCarousel";
+import ParallaxSection from "./components/ParallaxSection";
+import QuickActionFAB from "./components/QuickActionFAB";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <TopContactBar />
+      <Navbar />
+      <Hero />
+      <BrandCarousel />
+
+      {/* Beauty Section */}
+      <ParallaxSection
+        id="beauty"
+        imageSrc="/image4.jpg"
+        title="Beauty"
+        subtitle="Curated skincare, makeup, and beauty essentials from the world's most coveted brands."
+        ctaText="Explore Beauty"
+        ctaHref="#contact"
+      />
+
+      {/* Featured Products Grid */}
+      <section className="py-20 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-extralight tracking-[0.2em] uppercase text-center mb-4">
+            Featured
+          </h2>
+          <p className="text-xs font-extralight tracking-widest text-center text-gray-500 mb-12">
+            Handpicked luxury for discerning taste
           </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+            {[
+              { title: "Skincare", image: "/image5.jpg" },
+              { title: "Makeup", image: "/image6.jpg" },
+              { title: "Fragrance", image: "/image7.jpg" },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="relative aspect-[3/4] overflow-hidden group cursor-pointer"
+              >
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                  style={{ backgroundImage: `url(${item.image})` }}
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+                <div className="absolute inset-0 flex items-end justify-center pb-10">
+                  <span className="text-white text-sm font-extralight tracking-[0.3em] uppercase">
+                    {item.title}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Home Luxury Section */}
+      <ParallaxSection
+        id="home-luxury"
+        imageSrc="/image8.jpg"
+        title="Home Luxury"
+        subtitle="Elevate your living space with premium covers, sheets, blankets, and home accessories."
+        ctaText="Explore Home"
+        ctaHref="#contact"
+        overlayOpacity={0.4}
+      />
+
+      {/* Home Products Grid */}
+      <section className="py-20 px-6 bg-neutral-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+            {[
+              { title: "Bedding", image: "/image9.jpg" },
+              { title: "Blankets & Throws", image: "/image10.jpg" },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="relative aspect-[4/3] overflow-hidden group cursor-pointer"
+              >
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                  style={{ backgroundImage: `url(${item.image})` }}
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-white text-lg font-extralight tracking-[0.3em] uppercase">
+                    {item.title}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="py-24 px-6 bg-white text-center">
+        <h2 className="text-2xl md:text-4xl font-extralight tracking-[0.15em] uppercase mb-4">
+          Experience Luxury
+        </h2>
+        <p className="text-sm font-extralight tracking-widest text-gray-500 mb-10 max-w-md mx-auto">
+          Connect with us to discover our full collection and exclusive offers.
+        </p>
+        <a
+          href="https://wa.me/263788766757?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20your%20products.%20Please%20assist%20me."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block border border-black bg-transparent px-10 py-4 text-xs font-extralight tracking-widest uppercase hover:bg-black hover:text-white transition-colors"
+        >
+          Get in Touch
+        </a>
+      </section>
+
+      <Footer />
+      <QuickActionFAB />
+    </>
   );
 }

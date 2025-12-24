@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lyanness - Luxury Beauty & Home Products
 
-## Getting Started
+A premium landing page for Lyanness, a luxury beauty and home products reseller. Built with Next.js and featuring a Zara-inspired aesthetic with modern parallax effects and responsive design.
 
-First, run the development server:
+## 🌟 Features
+
+- **Premium Design**: Zara-inspired luxury aesthetic with thin fonts and elegant typography
+- **Responsive Layout**: Mobile-first design that works perfectly on all devices
+- **Parallax Effects**: Smooth scrolling animations for enhanced user experience
+- **Brand Carousel**: Animated showcase of featured brands and products
+- **Contact Integration**: Direct WhatsApp and phone integration for customer inquiries
+- **Performance Optimized**: Built with Next.js 16 for fast loading and SEO optimization
+
+## 🚀 Getting Started
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Built With
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 16.1**: React framework for production
+- **React 19.2**: Latest React with modern features
+- **TypeScript**: Type-safe development
+- **Tailwind CSS 4**: Utility-first styling
+- **Custom Fonts**: Cormorant Garamond + Josefin Sans for luxury typography
 
-## Learn More
+## 📱 Contact & Deployment
 
-To learn more about Next.js, take a look at the following resources:
+- **Phone**: +263788766757
+- **Location**: Zimbabwe
+- **Instagram**: @lyanness_luxury
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is optimized for Netlify deployment:
 
-## Deploy on Vercel
+```bash
+npm run build    # Build for production
+npm run start    # Test production build locally
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📂 Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+lyannes/
+├── app/
+│   ├── components/     # React components
+│   ├── globals.css     # Global styles
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Main landing page
+├── public/
+│   └── images/         # Static assets
+└── .github/
+    └── copilot-instructions.md  # AI development guidelines
+```
+
+Built with ❤️ for luxury beauty and home products.
