@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-extralight tracking-[0.3em] uppercase mb-4">
-              Lyannes&apos;s
+              Lyanne&apos;s
             </h3>
             <p className="text-xs font-extralight tracking-wider leading-relaxed text-gray-400">
               Premium beauty, skincare, makeup, and home luxury products. Curated for those who
@@ -80,7 +80,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-xs font-extralight tracking-widest text-gray-500">
-            © {new Date().getFullYear()} Lyannes&apos;s. All rights reserved.
+            © {new Date().getFullYear()} Lyanne&apos;s. All rights reserved.
           </p>
         </div>
       </div>

@@ -58,9 +58,9 @@ If anything here is unclear or you want additional conventions (commit message s
 
 ---
 
-## Lyannes's Brand & Design Guidelines
+## Lyanne's Brand & Design Guidelines
 
-Lyannes's is a premium SME reselling luxury beauty, skincare, makeup, and home luxury products (sheets, blankets, covers). The landing page must convey elegance, minimalism, and a high-end boutique feel—heavily inspired by Zara's web aesthetic.
+Lyanne's is a premium SME reselling luxury beauty, skincare, makeup, and home luxury products (sheets, blankets, covers). The landing page must convey elegance, minimalism, and a high-end boutique feel—heavily inspired by Zara's web aesthetic.
 
 ### Visual Identity
 
