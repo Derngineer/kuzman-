@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 animate-fade-in-up">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight tracking-[0.2em] uppercase mb-6">
-          Lyanness
+          Lyannes&apos;s
         </h1>
         <p className="text-sm md:text-base font-extralight tracking-widest mb-10 max-w-md mx-auto">
           Premium Beauty &amp; Home Luxury

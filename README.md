@@ -1,6 +1,6 @@
-# Lyanness - Luxury Beauty & Home Products
+# Lyannes's - Luxury Beauty & Home Products
 
-A premium landing page for Lyanness, a luxury beauty and home products reseller. Built with Next.js and featuring a Zara-inspired aesthetic with modern parallax effects and responsive design.
+A premium landing page for Lyannes's, a luxury beauty and home products reseller. Built with Next.js and featuring a Zara-inspired aesthetic with modern parallax effects and responsive design.
 
 ## 🌟 Features
 
@@ -33,7 +33,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - **Phone**: +263788766757
 - **Location**: Zimbabwe
-- **Instagram**: @lyanness_luxury
+- **Instagram**: @lyannesluxury
 
 ## 🚀 Deployment
 

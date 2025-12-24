@@ -107,14 +107,24 @@ export default function Home() {
         <p className="text-sm font-extralight tracking-widest text-gray-500 mb-10 max-w-md mx-auto">
           Connect with us to discover our full collection and exclusive offers.
         </p>
-        <a
-          href="https://wa.me/263788766757?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20your%20products.%20Please%20assist%20me."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block border border-black bg-transparent px-10 py-4 text-xs font-extralight tracking-widest uppercase hover:bg-black hover:text-white transition-colors"
-        >
-          Get in Touch
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+            href="https://wa.me/263788766757?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20your%20products%20and%20get%20pricing%20information.%20Please%20assist%20me."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-black bg-transparent px-10 py-4 text-xs font-extralight tracking-widest uppercase hover:bg-black hover:text-white transition-colors"
+          >
+            Get in Touch
+          </a>
+          <a
+            href="https://wa.me/263788766757?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20pricing%20for%20your%20luxury%20products.%20Could%20you%20please%20send%20me%20your%20current%20price%20list%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-black bg-black text-white px-10 py-4 text-xs font-extralight tracking-widest uppercase hover:bg-transparent hover:text-black transition-colors"
+          >
+            Enquire Prices
+          </a>
+        </div>
       </section>
 
       <Footer />

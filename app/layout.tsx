@@ -15,7 +15,7 @@ const josefin = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Lyanness | Premium Beauty & Home Luxury",
+  title: "Lyannes's | Premium Beauty & Home Luxury",
   description:
     "Discover curated luxury beauty, skincare, makeup, and home products from world-renowned brands. Located at 1 New Market, close to Mt Pleasant, Harare.",
 };
