@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import BrandCarousel from "./components/BrandCarousel";
 import ParallaxSection from "./components/ParallaxSection";
+import ImageMosaic from "./components/ImageMosaic";
+import InstagramFeed from "./components/InstagramFeed";
 import QuickActionFAB from "./components/QuickActionFAB";
 import Footer from "./components/Footer";
 
@@ -36,9 +38,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
             {[
-              { title: "Skincare", image: "/image5.jpg" },
+              { title: "Skincare", image: "/skincare1.jpg" },
               { title: "Makeup", image: "/image6.jpg" },
-              { title: "Fragrance", image: "/image7.jpg" },
+              { title: "Fragrance", image: "/fragrance1.jpg" },
             ].map((item) => (
               <div
                 key={item.title}
@@ -76,8 +78,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
             {[
-              { title: "Bedding", image: "/image9.jpg" },
-              { title: "Blankets & Throws", image: "/image10.jpg" },
+              { title: "Bedding", image: "/bedding1.jpg" },
+              { title: "Blankets & Throws", image: "/bedding2.jpg" },
             ].map((item) => (
               <div
                 key={item.title}
@@ -98,6 +100,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Image Mosaic Gallery */}
+      <ImageMosaic />
 
       {/* Final CTA Section */}
       <section className="py-24 px-6 bg-white text-center">
@@ -126,6 +131,9 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* Instagram Feed */}
+      <InstagramFeed />
 
       <Footer />
       <QuickActionFAB />
