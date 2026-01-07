@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import BrandCarousel from "./components/BrandCarousel";
 import ParallaxSection from "./components/ParallaxSection";
+import ProductShowcase from "./components/ProductShowcase";
 import ImageMosaic from "./components/ImageMosaic";
 import InstagramFeed from "./components/InstagramFeed";
 import QuickActionFAB from "./components/QuickActionFAB";
@@ -61,6 +62,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* New Arrivals - Product Showcase */}
+      <ProductShowcase />
 
       {/* Home Luxury Section */}
       <ParallaxSection
