@@ -80,14 +80,16 @@ export default function Home() {
       {/* Home Products Grid */}
       <section className="py-20 px-6 bg-neutral-50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
             {[
-              { title: "Bedding", image: "/bedding1.jpg" },
-              { title: "Blankets & Throws", image: "/bedding2.jpg" },
+              { title: "Home Décor", image: "/pic11.jpeg" },
+              { title: "Blankets", image: "/pic12.jpeg" },
+              { title: "Throws", image: "/pic13.jpeg" },
+              { title: "Linens", image: "/pic14.jpeg" },
             ].map((item) => (
               <div
                 key={item.title}
-                className="relative aspect-[4/3] overflow-hidden group cursor-pointer"
+                className="relative aspect-[3/4] overflow-hidden group cursor-pointer"
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"

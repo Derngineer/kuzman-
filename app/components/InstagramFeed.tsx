@@ -3,12 +3,14 @@
 import { useEffect, useRef, useState } from "react";
 
 const instagramImages = [
-  "/image5.jpg",
-  "/image7.jpg", 
-  "/image9.jpg",
-  "/image10.jpg",
-  "/image14.jpg",
-  "/fragrance2.jpg",
+  "/pic3.jpeg",
+  "/pic4.jpeg", 
+  "/pic5.jpeg",
+  "/pic6.jpeg",
+  "/pic7.jpeg",
+  "/pic8.jpeg",
+  "/pic9.jpeg",
+  "/pic10.jpeg",
 ];
 
 export default function InstagramFeed() {

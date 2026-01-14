@@ -10,7 +10,7 @@ export default function Hero() {
     >
       {/* Background Image */}
       <Image
-        src="/image3.jpg"
+        src="/pic9.jpeg"
         alt="Luxury beauty and lifestyle"
         fill
         priority
@@ -18,8 +18,8 @@ export default function Hero() {
         sizes="100vw"
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20" />
+      {/* Overlay - darker gradient for text visibility */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 animate-fade-in-up">

@@ -24,18 +24,18 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-8 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/90 backdrop-blur-sm shadow-sm" : "bg-transparent"
+        scrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#hero" className="flex items-center">
+        <a href="#hero" className="flex items-center group">
           <Image
             src="/Group 1.svg"
             alt="Lyanne's"
-            width={180}
-            height={60}
-            className="h-14 md:h-16 w-auto"
+            width={220}
+            height={70}
+            className="h-16 md:h-20 w-auto drop-shadow-lg transition-transform duration-300 group-hover:scale-105"
             priority
           />
         </a>

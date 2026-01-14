@@ -3,14 +3,14 @@
 import { useEffect, useRef, useState } from "react";
 
 const mosaicImages = [
-  { src: "/image5.jpg", alt: "Luxury lifestyle", size: "large" },
-  { src: "/image7.jpg", alt: "Premium fragrance", size: "small" },
-  { src: "/image9.jpg", alt: "Elegant home", size: "small" },
-  { src: "/image10.jpg", alt: "Cozy luxury", size: "medium" },
-  { src: "/image11.jpg", alt: "Beauty essentials", size: "small" },
-  { src: "/image12.jpg", alt: "Home comfort", size: "large" },
-  { src: "/fragrance2.jpg", alt: "Signature scents", size: "medium" },
-  { src: "/image13.jpg", alt: "Lifestyle", size: "small" },
+  { src: "/pic15.jpeg", alt: "Luxury lifestyle", size: "large" },
+  { src: "/pic16.jpeg", alt: "Premium fragrance", size: "small" },
+  { src: "/pic17.jpeg", alt: "Elegant home", size: "small" },
+  { src: "/pic18.jpeg", alt: "Cozy luxury", size: "medium" },
+  { src: "/pic19.jpeg", alt: "Beauty essentials", size: "small" },
+  { src: "/pic2.jpeg", alt: "Home comfort", size: "large" },
+  { src: "/fragrance1.jpg", alt: "Signature scents", size: "medium" },
+  { src: "/skincare1.jpg", alt: "Skincare", size: "small" },
 ];
 
 export default function ImageMosaic() {
