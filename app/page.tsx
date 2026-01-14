@@ -83,8 +83,8 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
             {[
               { title: "Home Décor", image: "/pic11.jpeg" },
-              { title: "Blankets", image: "/pic12.jpeg" },
-              { title: "Throws", image: "/pic13.jpeg" },
+              { title: "Pillows", image: "/pic12.jpeg" },
+              { title: "Bedding", image: "/pic13.jpeg" },
               { title: "Linens", image: "/pic14.jpeg" },
             ].map((item) => (
               <div
