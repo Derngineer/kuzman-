@@ -40,7 +40,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
             {[
               { title: "Skincare", image: "/skincare1.jpg" },
-              { title: "Makeup", image: "/image6.jpg" },
+              { title: "Makeup", image: "/image8.jpg" },
               { title: "Fragrance", image: "/fragrance1.jpg" },
             ].map((item) => (
               <div
@@ -69,7 +69,7 @@ export default function Home() {
       {/* Home Luxury Section */}
       <ParallaxSection
         id="home-luxury"
-        imageSrc="/image8.jpg"
+        imageSrc="/pic23.jpeg"
         title="Home Luxury"
         subtitle="Elevate your living space with premium covers, sheets, blankets, and home accessories."
         ctaText="Explore Home"

@@ -11,6 +11,7 @@ const instagramImages = [
   "/pic8.jpeg",
   "/pic9.jpeg",
   "/pic10.jpeg",
+  "/pic22.jpeg",
 ];
 
 export default function InstagramFeed() {

@@ -24,6 +24,16 @@ const newArrivals = [
     title: "Curated Picks",
     category: "Best Seller"
   },
+  { 
+    src: "/pic20.jpeg", 
+    title: "Latest Arrivals",
+    category: "New In"
+  },
+  { 
+    src: "/pic21.jpeg", 
+    title: "Fresh Picks",
+    category: "Just Added"
+  },
 ];
 
 export default function ProductShowcase() {
