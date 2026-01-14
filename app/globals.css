@@ -52,6 +52,13 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
+/* Fix parallax for mobile - fixed attachment doesn't work on iOS */
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
 /* Fade-in animation */
 @keyframes fadeInUp {
   from {

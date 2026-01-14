@@ -45,11 +45,18 @@ export default function ParallaxSection({
     <section
       id={id}
       ref={sectionRef}
-      className="relative min-h-screen w-full flex items-center justify-center parallax"
-      style={{
-        backgroundImage: `url(${imageSrc})`,
-      }}
+      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden"
     >
+      {/* Background Image - works better on mobile */}
+      <div 
+        className="absolute inset-0 parallax"
+        style={{
+          backgroundImage: `url(${imageSrc})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }}
+      />
+      
       {/* Overlay */}
       <div
         className="absolute inset-0"
