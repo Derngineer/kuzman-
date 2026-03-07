@@ -36,10 +36,17 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="text-sm font-light tracking-widest uppercase mb-4">Get in Touch</h4>
-            <ul className="space-y-2 text-xs font-extralight tracking-wider text-gray-400">
+            <ul className="space-y-3 text-xs font-extralight tracking-wider text-gray-400">
               <li>
+                <span className="text-[10px] text-white/60 uppercase tracking-wider block mb-1">Zimbabwe</span>
                 <a href="tel:+263788766757" className="hover:text-white transition-colors">
                   +263 788 766 757
+                </a>
+              </li>
+              <li>
+                <span className="text-[10px] text-white/60 uppercase tracking-wider block mb-1">Dubai, UAE</span>
+                <a href="tel:+971505894608" className="hover:text-white transition-colors">
+                  +971 50 589 4608
                 </a>
               </li>
               <li>
@@ -49,7 +56,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  WhatsApp
+                  WhatsApp Us
                 </a>
               </li>
               <li className="flex items-start gap-1">

@@ -39,9 +39,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
             {[
-              { title: "Skincare", image: "/skincare1.jpg" },
+              { title: "Skincare", image: "/lainege.jpeg" },
               { title: "Makeup", image: "/image8.jpg" },
-              { title: "Fragrance", image: "/fragrance1.jpg" },
+              { title: "Fragrance", image: "/fragrances.jpeg" },
             ].map((item) => (
               <div
                 key={item.title}
@@ -73,19 +73,23 @@ export default function Home() {
         title="Home Luxury"
         subtitle="Elevate your living space with premium covers, sheets, blankets, and home accessories."
         ctaText="Explore Home"
-        ctaHref="#contact"
+        ctaHref="#home-products"
         overlayOpacity={0.4}
       />
 
       {/* Home Products Grid */}
-      <section className="py-20 px-6 bg-neutral-50">
+      <section id="home-products" className="py-20 px-6 bg-neutral-50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
             {[
               { title: "Home Décor", image: "/pic11.jpeg" },
               { title: "Pillows", image: "/pic12.jpeg" },
-              { title: "Bedding", image: "/pic13.jpeg" },
+              { title: "Bedding", image: "/bed001.jpeg" },
               { title: "Linens", image: "/pic14.jpeg" },
+              { title: "Bathrobes", image: "/bathrobs.jpeg" },
+              { title: "Slippers", image: "/slippers.jpeg" },
+              { title: "Comfort", image: "/herosection2.jpeg" },
+              { title: "Throws", image: "/pic13.jpeg" },
             ].map((item) => (
               <div
                 key={item.title}

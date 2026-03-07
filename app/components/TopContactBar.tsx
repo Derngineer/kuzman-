@@ -2,24 +2,46 @@
 
 export default function TopContactBar() {
   return (
-    <div className="w-full bg-black text-white py-1.5 px-4 flex justify-center md:justify-end items-center gap-6 text-xs font-extralight tracking-widest">
-      <a href="tel:+263788766757" className="hover:underline flex items-center gap-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-3 w-3"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={1}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-          />
-        </svg>
-        +263 788 766 757
-      </a>
+    <div className="w-full bg-black text-white py-2 px-4 flex flex-col md:flex-row justify-center md:justify-end items-center gap-2 md:gap-6 text-xs font-extralight tracking-widest">
+      {/* Location Labels */}
+      <div className="flex items-center gap-4 md:gap-6">
+        <a href="tel:+263788766757" className="hover:underline flex items-center gap-1.5">
+          <span className="text-[10px] bg-white/20 px-1.5 py-0.5 rounded">ZIM</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-3 w-3"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+            />
+          </svg>
+          +263 788 766 757
+        </a>
+        <a href="tel:+971505894608" className="hover:underline flex items-center gap-1.5">
+          <span className="text-[10px] bg-white/20 px-1.5 py-0.5 rounded">UAE</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-3 w-3"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+            />
+          </svg>
+          +971 50 589 4608
+        </a>
+      </div>
       <a
         href="https://wa.me/263788766757?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20your%20products.%20Please%20assist%20me."
         target="_blank"

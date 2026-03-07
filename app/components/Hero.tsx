@@ -10,7 +10,7 @@ export default function Hero() {
     >
       {/* Background Image */}
       <Image
-        src="/pic9.jpeg"
+        src="/herosection1.jpeg"
         alt="Luxury beauty and lifestyle"
         fill
         priority

@@ -9,8 +9,10 @@ const mosaicImages = [
   { src: "/pic18.jpeg", alt: "Cozy luxury", size: "medium" },
   { src: "/pic19.jpeg", alt: "Beauty essentials", size: "small" },
   { src: "/pic2.jpeg", alt: "Home comfort", size: "large" },
-  { src: "/fragrance1.jpg", alt: "Signature scents", size: "medium" },
-  { src: "/skincare1.jpg", alt: "Skincare", size: "small" },
+  { src: "/lainege.jpeg", alt: "Signature scents", size: "medium" },
+  { src: "/alcoholbottle.jpeg", alt: "Cleansing shower oil", size: "small" },
+  { src: "/herosection3.jpeg", alt: "Luxury collection", size: "medium" },
+  { src: "/perfumemix.jpeg", alt: "Perfume collection", size: "small" },
 ];
 
 export default function ImageMosaic() {

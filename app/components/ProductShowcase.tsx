@@ -10,7 +10,7 @@ const newArrivals = [
     category: "New In"
   },
   { 
-    src: "/image18.jpeg", 
+    src: "/watermelon.jpeg", 
     title: "Premium Selection",
     category: "Featured"
   },
@@ -82,14 +82,11 @@ export default function ProductShowcase() {
           </p>
         </div>
 
-        {/* Product Grid - Asymmetric Layout */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        {/* Product Grid - Clean Uniform Layout */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
           {newArrivals.map((product, index) => {
             const isVisible = visibleItems.includes(index);
             const isHovered = hoveredIndex === index;
-            
-            // Create asymmetric heights for visual interest
-            const heightClass = index % 2 === 0 ? "aspect-[3/4]" : "aspect-[3/5]";
             
             return (
               <div
@@ -97,9 +94,8 @@ export default function ProductShowcase() {
                 className={`
                   relative overflow-hidden group cursor-pointer
                   transition-all duration-700 ease-out
-                  ${heightClass}
+                  aspect-[3/4]
                   ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}
-                  ${index === 0 ? "md:col-span-2 md:row-span-2 md:aspect-square" : ""}
                 `}
                 style={{ transitionDelay: `${index * 100}ms` }}
                 onMouseEnter={() => setHoveredIndex(index)}
